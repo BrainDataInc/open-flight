@@ -8,5 +8,4 @@ LOG = log.getLogger(__name__)
 
 @app.route("/")
 def hello():
-    LOG.info("Handling '/'")
-    return "Hello from Flask"
+    return flask.jsonify({"msg": "HELLO"})
